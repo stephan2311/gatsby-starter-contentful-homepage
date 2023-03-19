@@ -1,10 +1,6 @@
 const { documentToHtmlString } = require("@contentful/rich-text-html-renderer")
 const { getGatsbyImageResolver } = require("gatsby-plugin-image/graphql-utils")
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 
 exports.createSchemaCustomization = async ({ actions }) => {
   actions.createFieldExtension({
